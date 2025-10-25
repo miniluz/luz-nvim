@@ -18,6 +18,11 @@ let
     # Utils
     nvim-autopairs
     nvim-surround
+
+    # Git
+    gitsigns-nvim
+    hunk-nvim
+    fugitive
   ];
 
   treesitter = pkgs.vimPlugins.nvim-treesitter.withPlugins (
