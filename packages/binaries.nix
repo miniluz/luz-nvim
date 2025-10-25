@@ -32,7 +32,7 @@ let
     marksman
     tinymist
     
-    prettier
+    nodePackages.prettier
     prettierd
     vscode-js-debug
 
