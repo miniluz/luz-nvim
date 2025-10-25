@@ -20,7 +20,7 @@ mnw.lib.wrap pkgs {
   neovim = pkgs.neovim-unwrapped;
 
   appName = "luz-nvim";
-  aliases = [ "luz-nvim" ];
+  aliases = [ "luz-nvim" "nv" ];
 
   luaFiles = [
     ./init.lua
@@ -34,8 +34,7 @@ mnw.lib.wrap pkgs {
 
     dev.config = {
       pure = ./nvim;
-      # impure = "/' .. vim.uv.cwd()  .. '/nvim";
-      impure = "/home/miniluz/luz-nvim/nvim";
+      impure = "/' .. vim.uv.cwd()  .. '/nvim";
     };
   };
 }

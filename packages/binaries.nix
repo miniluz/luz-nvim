@@ -36,8 +36,8 @@ let
     prettierd
     vscode-js-debug
 
-    (jdt-language-server.override { jdk = pkgs.jdk_headless; })
-    (google-java-format.override { jre = pkgs.jre_headless; })
+    # (jdt-language-server.override { jdk = pkgs.jdk_headless; })
+    # (google-java-format.override { jre = pkgs.jre_headless; })
   ];
 in
 packages ++ [ customYazi ]
