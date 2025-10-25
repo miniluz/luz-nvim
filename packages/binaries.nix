@@ -26,13 +26,15 @@ let
     tailwindcss-language-server
     prettierd
 
-    fish-lsp
-
     basedpyright
     ruff
 
     marksman
     tinymist
+    
+    prettier
+    prettierd
+    vscode-js-debug
 
     (jdt-language-server.override { jdk = pkgs.jdk_headless; })
     (google-java-format.override { jre = pkgs.jre_headless; })

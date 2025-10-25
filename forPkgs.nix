@@ -8,6 +8,10 @@ let
 
   customStartPlugins = {
     lazydev-nvim = callPackage ./packages/startPlugins/lazydev-nvim.nix { };
+    neocodeium-nvim = callPackage ./packages/startPlugins/neocodeium-nvim.nix {  };
+    fFtT-highlights-nvim = callPackage ./packages/startPlugins/fFtT-highlights-nvim.nix {};
+    js-i18n-nvim = callPackage ./packages/startPlugins/js-i18n-nvim.nix { };
+    vim-nix = callPackage ./packages/startPlugins/vim-nix.nix { };
   };
   customOptPlugins = { };
   customBinaries = { };
@@ -30,7 +34,8 @@ mnw.lib.wrap pkgs {
 
     dev.config = {
       pure = ./nvim;
-      impure = "/' .. vim.uv.cwd()  .. '/nvim";
+      # impure = "/' .. vim.uv.cwd()  .. '/nvim";
+      impure = "/home/miniluz/luz-nvim/nvim";
     };
   };
 }

@@ -9,20 +9,50 @@ let
     catppuccin-nvim
 
     # IDE
+    auto-session
     bufferline-nvim
     yazi-nvim
-
-    # LSP
-    nvim-lspconfig
-
-    # Utils
-    nvim-autopairs
-    nvim-surround
+    which-key-nvim
+    snacks-nvim
+    mini-nvim
+    lualine-nvim
+    lualine-lsp-progress
 
     # Git
     gitsigns-nvim
     hunk-nvim
     fugitive
+
+    # LSP
+    nvim-lspconfig
+    conform-nvim
+    blink-cmp
+    nvim-ts-context-commentstring
+    nvim-lightbulb
+    otter-nvim
+    tiny-inline-diagnostic-nvim
+
+    # DAP
+    nvim-dap
+    nvim-dap-ui
+    nvim-dap-virtual-text
+    # nvim-dap-python requires packaging all of python
+    nvim-dap-lldb
+    nvim-dap-vscode-js
+
+    # Language specific
+    typst-preview-nvim
+
+    # Utils
+    nvim-autopairs
+    nvim-surround
+    leap-nvim
+    hardtime-nvim
+    fidget-nvim
+    noice-nvim
+    nvim-ufo
+    guess-indent-nvim
+    nvim-spider
   ];
 
   treesitter = pkgs.vimPlugins.nvim-treesitter.withPlugins (

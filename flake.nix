@@ -24,14 +24,17 @@
       forPkgs = import ./forPkgs.nix mnw;
     in
     {
-      packages = forAllSystems (pkgs: {
+      packages = forAllSystems (pkgs: rec {
         inherit forPkgs;
-        default = forPkgs pkgs;
+	neovim = forPkgs pkgs;
+
+        default = neovim;
+	devMode = neovim.devMode;
       });
 
       devShells = forAllSystems (pkgs: {
         default = pkgs.mkShellNoCC {
-          packages = [ self.packages.${pkgs.system}.default.devMode ];
+          packages = [ self.packages.${pkgs.system}.devMode ];
         };
       });
     };
