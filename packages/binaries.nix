@@ -38,6 +38,9 @@ let
 
     # (jdt-language-server.override { jdk = pkgs.jdk_headless; })
     # (google-java-format.override { jre = pkgs.jre_headless; })
+
+    wl-clipboard
+    wl-clipboard-x11
   ];
 in
 packages ++ [ customYazi ]
