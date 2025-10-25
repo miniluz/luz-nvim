@@ -1,12 +1,14 @@
 mnw: pkgs:
 let
-  # inherit (pkgs) callPackage;
+  inherit (pkgs) callPackage;
 
   startPlugins = import ./packages/startPlugins.nix { inherit pkgs; };
   optPlugins = import ./packages/optPlugins.nix { inherit pkgs; };
   binaries = import ./packages/binaries.nix { inherit pkgs; };
 
-  customStartPlugins = { };
+  customStartPlugins = {
+    lazydev-nvim = callPackage ./packages/startPlugins/lazydev-nvim.nix { };
+  };
   customOptPlugins = { };
   customBinaries = { };
 in
