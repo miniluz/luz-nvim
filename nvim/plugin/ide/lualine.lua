@@ -1,4 +1,4 @@
- require("lualine").setup({
+require("lualine").setup({
   extensions = {
     "fzf",
     "fugitive",
@@ -11,15 +11,6 @@
       {
         "filename",
         path = 1,
-
-        -- Don't show the full filepath if the file is in the nix store, since
-        -- it'll be way too long
-        fmt = function(filename)
-          if filename:match("^/nix/store") then
-            return vim.fn.expand("%:t")
-          end
-          return filename
-        end,
       },
     },
 

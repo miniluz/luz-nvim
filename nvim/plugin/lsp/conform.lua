@@ -3,8 +3,6 @@ require("conform").setup({
   notify_on_error = false,
 
   formatters_by_ft = {
-    java = { "google-java-format" },
-
     nix = { "nixfmt" },
 
     lua = { "stylua" },
@@ -29,10 +27,6 @@ require("conform").setup({
   },
 
   formatters = {
-    ["google-java-format"] = {
-      command = "google-java-format",
-      args = { "--aosp", "-" },
-    },
     ["tex-fmt"] = {
       prepend_args = { "--nowrap", "--tabsize", "4" },
     },
@@ -43,9 +37,9 @@ require("conform").setup({
   format_on_save = nil,
 
   format_after_save = function(bufnr)
-		if vim.g.disable_autoformat then
-			return nil
-		end
+    if vim.g.disable_autoformat then
+      return nil
+    end
 
     if vim.b[bufnr].disable_autoformat then
       return nil
@@ -72,7 +66,6 @@ end, { range = true })
 
 vim.cmd.cabbrev("fmt", "Fmt")
 
-
 vim.keymap.set("n", "<leader>lt", function()
   if vim.b.disable_autoformat then
     vim.b.disable_autoformat = false
@@ -81,9 +74,9 @@ vim.keymap.set("n", "<leader>lt", function()
     vim.b.disable_autoformat = true
     vim.notify("Format-on-save disabled", vim.log.levels.WARN)
   end
-end, { 
+end, {
   desc = "Toggle format-on-save (buffer)",
-  silent = true 
+  silent = true,
 })
 
 vim.keymap.set("n", "<leader>lT", function()
@@ -96,5 +89,5 @@ vim.keymap.set("n", "<leader>lT", function()
   end
 end, {
   desc = "Toggle format-on-save (global)",
-  silent = true
+  silent = true,
 })

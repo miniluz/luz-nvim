@@ -16,6 +16,7 @@ let
 
   packages = with pkgs; [
     nil
+    nixfmt-rfc-style
 
     rust-analyzer
 
