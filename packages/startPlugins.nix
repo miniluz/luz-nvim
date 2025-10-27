@@ -53,6 +53,7 @@ let
     nvim-ufo
     guess-indent-nvim
     nvim-spider
+    vim-tmux-navigator
   ];
 
   treesitter = pkgs.vimPlugins.nvim-treesitter.withPlugins (

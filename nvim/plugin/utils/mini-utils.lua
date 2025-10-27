@@ -7,9 +7,4 @@ require("mini.comment").setup({
     end,
   },
 })
-require("mini.basics").setup({
-  mappings = {
-    windows = true,
-    move_with_alt = true,
-  },
-})
+require("mini.basics").setup({})
