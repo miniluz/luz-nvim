@@ -32,7 +32,7 @@ let
 
     marksman
     tinymist
-    
+
     nodePackages.prettier
     prettierd
     vscode-js-debug
@@ -42,6 +42,8 @@ let
 
     wl-clipboard
     wl-clipboard-x11
+    jq
+    yq
   ];
 in
 packages ++ [ customYazi ]
