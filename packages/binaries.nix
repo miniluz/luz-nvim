@@ -44,6 +44,7 @@ let
     wl-clipboard-x11
     jq
     yq
+    sqlite
   ];
 in
 packages ++ [ customYazi ]

@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     mnw.url = "github:Gerg-L/mnw";
   };
 
@@ -26,10 +26,10 @@
     {
       packages = forAllSystems (pkgs: rec {
         inherit forPkgs;
-	neovim = forPkgs pkgs;
+        neovim = forPkgs pkgs;
 
         default = neovim;
-	devMode = neovim.devMode;
+        devMode = neovim.devMode;
       });
 
       devShells = forAllSystems (pkgs: {
