@@ -3,7 +3,7 @@ require("gitmoji").setup({})
 require("blink.cmp").setup({
   keymap = {
     preset = "default",
-    ["<C-Enter>"] = { "select_and_accept", "fallback" },
+    ["<A-Enter>"] = { "select_and_accept", "fallback" },
   },
   sources = {
     default = {
