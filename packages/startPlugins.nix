@@ -42,6 +42,7 @@ let
 
     # Language specific
     typst-preview-nvim
+    tailwind-tools-nvim
 
     # Utils
     nvim-autopairs
