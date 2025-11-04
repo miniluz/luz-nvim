@@ -30,7 +30,9 @@ vim.keymap.set({ "n", "v", "i" }, "<C-.>", vim.lsp.buf.code_action, { silent = t
 
 vim.keymap.set({ "n", "v" }, "<leader><Tab>", "<C-^>", { silent = true, desc = "Switch to last buffer" })
 
---
+vim.api.nvim_create_user_command("FixPaste", function()
+  vim.cmd([[%s/\e\[27;5;106\~/\r/g]])
+end, {})
 
 vim.lsp.inlay_hint.enable(true)
 
