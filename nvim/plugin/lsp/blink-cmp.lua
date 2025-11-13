@@ -12,6 +12,7 @@ require("blink.cmp").setup({
       "snippets",
       "buffer",
       "gitmoji",
+      "conventional_commits",
     },
     providers = {
       gitmoji = {
@@ -20,6 +21,16 @@ require("blink.cmp").setup({
         opts = {
           filetypes = { "gitcommit", "jj" },
         },
+      },
+      conventional_commits = {
+        name = "Conventional Commits",
+        module = "blink-cmp-conventional-commits",
+        enabled = function()
+          return vim.bo.filetype == "gitcommit"
+        end,
+        ---@module 'blink-cmp-conventional-commits'
+        ---@type blink-cmp-conventional-commits.Options
+        opts = {}, -- none so far
       },
     },
   },

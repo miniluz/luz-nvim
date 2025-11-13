@@ -22,12 +22,12 @@ let
     gitsigns-nvim
     hunk-nvim
     fugitive
+    blink-cmp-conventional-commits
 
     # LSP
     nvim-lspconfig
     conform-nvim
     blink-cmp
-    nvim-ts-context-commentstring
     nvim-lightbulb
     otter-nvim
     tiny-inline-diagnostic-nvim
@@ -41,6 +41,7 @@ let
     nvim-dap-vscode-js
 
     # Language specific
+    nvim-ts-context-commentstring
     typst-preview-nvim
     tailwind-tools-nvim
     markdown-preview-nvim
