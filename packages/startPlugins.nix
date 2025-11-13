@@ -43,6 +43,7 @@ let
     # Language specific
     typst-preview-nvim
     tailwind-tools-nvim
+    markdown-preview-nvim
 
     # Utils
     nvim-autopairs
