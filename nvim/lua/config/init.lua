@@ -26,6 +26,8 @@ vim.keymap.set({ "n", "v" }, "<leader>w", "<cmd>w<cr><cmd>bd<cr>", { silent = tr
 vim.keymap.set({ "n", "v" }, "<leader>W", "<cmd>bd<cr>", { silent = true, desc = "Close buffer without saving" })
 vim.keymap.set({ "n", "v" }, "<leader><C-w>", "<cmd>%bd|e#<cr>", { silent = true, desc = "Close all buffers" })
 
+vim.keymap.set({ "n", "v" }, "<leader>g", "<cmd>G<cr>", { silent = true, desc = "Open fugitive" })
+
 vim.keymap.set({ "n", "v", "i" }, "<C-.>", vim.lsp.buf.code_action, { silent = true, desc = "Open code actions" })
 
 vim.keymap.set({ "n", "v" }, "<leader><Tab>", "<C-^>", { silent = true, desc = "Switch to last buffer" })
