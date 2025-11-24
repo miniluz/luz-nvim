@@ -23,7 +23,7 @@ end
 -- Language-Specific Adapters
 -- ============================================================================
 
-require("dap-lldb").setup({})
+require("dap-lldb").setup({ codelldb_path = "lldb" })
 require("dap-vscode-js").setup({})
 
 for _, language in ipairs({ "typescript", "javascript" }) do
