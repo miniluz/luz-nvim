@@ -34,12 +34,6 @@ mnw.lib.wrap pkgs {
   extraBinPath = binaries ++ builtins.attrValues customBinaries;
 
   wrapperArgs = [
-    "--set-default"
-    "CODELLDB_PATH"
-    "${pkgs.vscode-extensions.vadimcn.vscode-lldb}/share/vscode/extensions/vadimcn.vscode-lldb/adapter/codelldb"
-    "--set-default"
-    "LIBLLDB_PATH"
-    "${pkgs.vscode-extensions.vadimcn.vscode-lldb}/share/vscode/extensions/vadimcn.vscode-lldb/lldb/lib/liblldb.so"
   ];
 
   plugins = {

@@ -36,6 +36,7 @@ let
     nodePackages.prettier
     prettierd
     vscode-js-debug
+    vscode-extensions.vadimcn.vscode-lldb
 
     # (jdt-language-server.override { jdk = pkgs.jdk_headless; })
     # (google-java-format.override { jre = pkgs.jre_headless; })

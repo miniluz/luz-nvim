@@ -37,7 +37,8 @@ let
     nvim-dap-ui
     nvim-dap-virtual-text
     # nvim-dap-python requires packaging all of python
-    nvim-dap-lldb
+    # nvim-dap-lldb
+    rustaceanvim
     nvim-dap-vscode-js
 
     # Language specific
