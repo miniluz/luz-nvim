@@ -23,7 +23,7 @@ end
 -- Language-Specific Adapters
 -- ============================================================================
 
-require("dap-lldb").setup({ codelldb_path = "lldb" })
+require("dap-lldb").setup({ codelldb_path = vim.env.CODELLDB_PATH })
 require("dap-vscode-js").setup({})
 
 for _, language in ipairs({ "typescript", "javascript" }) do
