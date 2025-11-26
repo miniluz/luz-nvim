@@ -1,5 +1,12 @@
 require("fidget").setup({})
-require("hardtime").setup({})
+require("hardtime").setup({
+  disabled_keys = {
+    ["<Up>"] = false,
+    ["<Down>"] = false,
+    ["<Left>"] = false,
+    ["<Right>"] = false,
+  },
+})
 require("guess-indent").setup({})
 require("noice").setup({})
 
