@@ -16,7 +16,7 @@ let
 
   packages = with pkgs; [
     nil
-    nixfmt-rfc-style
+    nixfmt
 
     rust-analyzer
 
@@ -38,8 +38,8 @@ let
     vscode-js-debug
     vscode-extensions.vadimcn.vscode-lldb
 
-    # (jdt-language-server.override { jdk = pkgs.jdk_headless; })
-    # (google-java-format.override { jre = pkgs.jre_headless; })
+    (jdt-language-server.override { jdk = pkgs.jdk_headless; })
+    (google-java-format.override { jre = pkgs.jre_headless; })
 
     wl-clipboard
     wl-clipboard-x11

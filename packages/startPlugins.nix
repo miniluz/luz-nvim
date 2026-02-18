@@ -21,7 +21,7 @@ let
     # Git
     gitsigns-nvim
     hunk-nvim
-    fugitive
+    vim-fugitive
     blink-cmp-conventional-commits
 
     # LSP
@@ -46,6 +46,7 @@ let
     typst-preview-nvim
     tailwind-tools-nvim
     markdown-preview-nvim
+    nvim-jdtls
 
     # Utils
     nvim-autopairs

@@ -34,7 +34,7 @@
 
       devShells = forAllSystems (pkgs: {
         default = pkgs.mkShellNoCC {
-          packages = [ self.packages.${pkgs.system}.devMode ];
+          packages = [ self.packages.${pkgs.stdenv.hostPlatform.system}.devMode ];
         };
       });
     };
