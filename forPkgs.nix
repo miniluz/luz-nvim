@@ -1,4 +1,4 @@
-mnw: pkgs:
+mnw: fastspell-nvim: pkgs:
 let
   inherit (pkgs) callPackage;
 
@@ -14,6 +14,7 @@ let
     nvim-eslint = callPackage ./packages/startPlugins/nvim-eslint.nix { };
     vim-nix = callPackage ./packages/startPlugins/vim-nix.nix { };
     gitmoji = callPackage ./packages/startPlugins/gitmoji.nix { };
+    fastspell-nvim = fastspell-nvim.packages.${pkgs.stdenv.hostPlatform.system}.default;
   };
   customOptPlugins = { };
   customBinaries = { };
