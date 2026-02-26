@@ -43,7 +43,6 @@ let
 
     # Language specific
     nvim-ts-context-commentstring
-    typst-preview-nvim
     tailwind-tools-nvim
     markdown-preview-nvim
     nvim-jdtls
