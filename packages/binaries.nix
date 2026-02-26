@@ -32,6 +32,7 @@ let
 
     marksman
     tinymist
+    ltex-ls-plus
 
     nodePackages.prettier
     prettierd

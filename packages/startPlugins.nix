@@ -31,6 +31,7 @@ let
     nvim-lightbulb
     otter-nvim
     tiny-inline-diagnostic-nvim
+    ltex_extra-nvim
 
     # DAP
     nvim-dap

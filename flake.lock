@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1772123003,
-        "narHash": "sha256-2dqUlOa1iIVO5YpBT7Qn5J/sG+O6W0Ullykh2ToaOxA=",
+        "lastModified": 1772125333,
+        "narHash": "sha256-jkTuaUUeUqe1ta26qUsGBuMdyBHkbarQXZQhTnjtt3o=",
         "owner": "miniluz",
         "repo": "fastspell.nvim",
-        "rev": "82f2ec46ac6a5c414411a20ad356a6a6110f0479",
+        "rev": "0fe387abdad1f91ad33465181ecaec1ec7a642d2",
         "type": "github"
       },
       "original": {
