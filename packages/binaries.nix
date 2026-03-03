@@ -1,5 +1,15 @@
 { pkgs }:
 let
+  jdtlsWithLombok = pkgs.symlinkJoin {
+    name = "jdt-language-server-with-lombok";
+    paths = [ (pkgs.jdt-language-server.override { jdk = pkgs.jdk_headless; }) ];
+    buildInputs = [ pkgs.makeWrapper ];
+    postBuild = ''
+      wrapProgram $out/bin/jdtls \
+        --set JAVA_TOOL_OPTIONS "-javaagent:${pkgs.lombok}/share/java/lombok.jar"
+    '';
+  };
+
   customYazi = pkgs.yazi.override {
     optionalDeps = with pkgs; [
       jq
@@ -39,7 +49,7 @@ let
     vscode-js-debug
     vscode-extensions.vadimcn.vscode-lldb
 
-    (jdt-language-server.override { jdk = pkgs.jdk_headless; })
+    jdtlsWithLombok
     (google-java-format.override { jre = pkgs.jre_headless; })
 
     wl-clipboard
