@@ -37,7 +37,10 @@ let
     tailwindcss-language-server
     prettierd
 
-    basedpyright
+    (pkgs.python3.withPackages (ps: with ps; [
+      python-lsp-server
+      pylsp-mypy
+    ]))
     ruff
 
     marksman
@@ -48,7 +51,7 @@ let
     # vscode-extensions.vadimcn.vscode-lldb
 
     jdtlsWithLombok
-    (google-java-format.override { jre = pkgs.jre_headless; })
+    (google-java-format.override { jre = pkgs.jdk_headless; })
 
     wl-clipboard
     wl-clipboard-x11

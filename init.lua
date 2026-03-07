@@ -8,7 +8,7 @@ vim.lsp.enable({
   "rust_analyzer",
   "lua_ls",
   "ts_ls",
-  "basedpyright",
+  "pylsp",
   "marksman",
   "tinymist",
 })
