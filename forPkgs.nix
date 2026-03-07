@@ -8,7 +8,6 @@ let
 
   customStartPlugins = {
     lazydev-nvim = callPackage ./packages/startPlugins/lazydev-nvim.nix { };
-    neocodeium-nvim = callPackage ./packages/startPlugins/neocodeium-nvim.nix { };
     fFtT-highlights-nvim = callPackage ./packages/startPlugins/fFtT-highlights-nvim.nix { };
     js-i18n-nvim = callPackage ./packages/startPlugins/js-i18n-nvim.nix { };
     nvim-eslint = callPackage ./packages/startPlugins/nvim-eslint.nix { };

@@ -11,5 +11,4 @@ vim.lsp.enable({
   "basedpyright",
   "marksman",
   "tinymist",
-  "ltex",
 })

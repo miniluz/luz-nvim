@@ -42,12 +42,10 @@ let
 
     marksman
     tinymist
-    ltex-ls-plus
-
     nodePackages.prettier
     prettierd
     vscode-js-debug
-    vscode-extensions.vadimcn.vscode-lldb
+    # vscode-extensions.vadimcn.vscode-lldb
 
     jdtlsWithLombok
     (google-java-format.override { jre = pkgs.jre_headless; })

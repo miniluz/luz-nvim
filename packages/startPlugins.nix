@@ -31,8 +31,6 @@ let
     nvim-lightbulb
     otter-nvim
     tiny-inline-diagnostic-nvim
-    ltex_extra-nvim
-
     # DAP
     nvim-dap
     nvim-dap-ui
@@ -45,7 +43,6 @@ let
     # Language specific
     nvim-ts-context-commentstring
     tailwind-tools-nvim
-    markdown-preview-nvim
     nvim-jdtls
 
     # Utils
