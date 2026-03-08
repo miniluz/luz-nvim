@@ -13,9 +13,10 @@ let
     nvim-eslint = callPackage ./packages/startPlugins/nvim-eslint.nix { };
     vim-nix = callPackage ./packages/startPlugins/vim-nix.nix { };
     gitmoji = callPackage ./packages/startPlugins/gitmoji.nix { };
+  };
+  customOptPlugins = {
     fastspell-nvim = fastspell-nvim.packages.${pkgs.stdenv.hostPlatform.system}.default;
   };
-  customOptPlugins = { };
   customBinaries = { };
 in
 mnw.lib.wrap pkgs {

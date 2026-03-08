@@ -10,7 +10,6 @@ let
 
     # IDE
     auto-session
-    bufferline-nvim
     yazi-nvim
     which-key-nvim
     snacks-nvim
