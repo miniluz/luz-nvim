@@ -1,25 +1,5 @@
 {
   "nodes": {
-    "fastspell-nvim": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1772125333,
-        "narHash": "sha256-jkTuaUUeUqe1ta26qUsGBuMdyBHkbarQXZQhTnjtt3o=",
-        "owner": "miniluz",
-        "repo": "fastspell.nvim",
-        "rev": "0fe387abdad1f91ad33465181ecaec1ec7a642d2",
-        "type": "github"
-      },
-      "original": {
-        "owner": "miniluz",
-        "repo": "fastspell.nvim",
-        "type": "github"
-      }
-    },
     "mnw": {
       "locked": {
         "lastModified": 1771285028,
@@ -53,7 +33,6 @@
     },
     "root": {
       "inputs": {
-        "fastspell-nvim": "fastspell-nvim",
         "mnw": "mnw",
         "nixpkgs": "nixpkgs"
       }

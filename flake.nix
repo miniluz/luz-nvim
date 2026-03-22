@@ -2,10 +2,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     mnw.url = "github:Gerg-L/mnw";
-    fastspell-nvim = {
-      url = "github:miniluz/fastspell.nvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =
@@ -13,7 +9,6 @@
       self,
       nixpkgs,
       mnw,
-      fastspell-nvim,
     }:
     let
       inherit (nixpkgs) lib;
@@ -26,7 +21,7 @@
       forAllSystems =
         function: lib.genAttrs supportedSystems (system: function nixpkgs.legacyPackages.${system});
 
-      forPkgs = import ./forPkgs.nix mnw fastspell-nvim;
+      forPkgs = import ./forPkgs.nix mnw;
     in
     {
       packages = forAllSystems (pkgs: rec {

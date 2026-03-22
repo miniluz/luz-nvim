@@ -1,4 +1,4 @@
-mnw: fastspell-nvim: pkgs:
+mnw: pkgs:
 let
   inherit (pkgs) callPackage;
 
@@ -15,7 +15,7 @@ let
     gitmoji = callPackage ./packages/startPlugins/gitmoji.nix { };
   };
   customOptPlugins = {
-    fastspell-nvim = fastspell-nvim.packages.${pkgs.stdenv.hostPlatform.system}.default;
+
   };
   customBinaries = { };
 in
