@@ -37,15 +37,17 @@ let
     tailwindcss-language-server
     prettierd
 
-    (pkgs.python3.withPackages (ps: with ps; [
-      python-lsp-server
-      pylsp-mypy
-    ]))
+    (pkgs.python3.withPackages (
+      ps: with ps; [
+        python-lsp-server
+        pylsp-mypy
+      ]
+    ))
     ruff
 
     marksman
     tinymist
-    nodePackages.prettier
+    prettier
     prettierd
     vscode-js-debug
     # vscode-extensions.vadimcn.vscode-lldb
