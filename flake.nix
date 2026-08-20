@@ -19,7 +19,16 @@
         "x86_64-darwin"
       ];
       forAllSystems =
-        function: lib.genAttrs supportedSystems (system: function nixpkgs.legacyPackages.${system});
+        function:
+        lib.genAttrs supportedSystems (
+          system:
+          function (
+            import nixpkgs {
+              inherit system;
+              config.allowUnfree = true;
+            }
+          )
+        );
 
       forPkgs = import ./forPkgs.nix mnw;
     in

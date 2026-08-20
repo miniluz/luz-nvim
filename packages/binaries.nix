@@ -37,10 +37,10 @@ let
     tailwindcss-language-server
     prettierd
 
-    (pkgs.python3.withPackages (
+    (pkgs.python314.withPackages (
       ps: with ps; [
         python-lsp-server
-        pylsp-mypy
+        # pylsp-mypy Broken on nightly
       ]
     ))
     ruff
