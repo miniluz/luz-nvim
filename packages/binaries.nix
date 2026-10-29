@@ -2,7 +2,7 @@
 let
   jdtlsWithLombok = pkgs.symlinkJoin {
     name = "jdt-language-server-with-lombok";
-    paths = [ (pkgs.jdt-language-server.override { jdk = pkgs.jdk_headless; }) ];
+    paths = [ (pkgs.jdt-language-server.override { jdk25 = pkgs.jdk25_headless; }) ];
     buildInputs = [ pkgs.makeWrapper ];
     postBuild = ''
       wrapProgram $out/bin/jdtls \
@@ -53,7 +53,7 @@ let
     # vscode-extensions.vadimcn.vscode-lldb
 
     jdtlsWithLombok
-    (google-java-format.override { jre = pkgs.jdk_headless; })
+    (google-java-format.override { jre = pkgs.jdk25_headless; })
 
     wl-clipboard
     wl-clipboard-x11
